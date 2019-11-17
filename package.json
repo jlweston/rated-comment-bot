@@ -1,0 +1,41 @@
+{
+  "name": "ratedcommentbot",
+  "version": "1.0.0",
+  "description": "Searches for 'underrated comment' and corrects the user that made the comment.",
+  "main": "src/app.js",
+  "author": "jlweston",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.304.0",
+    "axios": "^0.18.0",
+    "bluebird": "^3.7.1",
+    "btoa": "^1.2.1",
+    "got": "^9.6.0",
+    "qs": "latest",
+    "querystring": "^0.2.0",
+    "safe-access": "^0.1.0",
+    "underscore": "^1.9.1",
+    "uuid": "^3.3.3"
+  },
+  "scripts": {
+    "getCode": "node src/oauthGetCode.js",
+    "getToken": "node src/oauthGetAccessToken.js",
+    "start:server": "nodemon src/server.js",
+    "test": "mocha test/**"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "mocha": "^6.2.2",
+    "nock": "^11.7.0",
+    "nodemon": "^1.19.4",
+    "nyc": "^14.1.1",
+    "serverless-webpack": "^5.3.1",
+    "should": "^13.2.3",
+    "sinon": "^7.5.0",
+    "webpack": "^4.41.2"
+  }
+}

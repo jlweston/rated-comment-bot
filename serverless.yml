@@ -1,0 +1,22 @@
+org: monotone2k
+app: ratedcommentbot-app
+service: RatedCommentBot
+
+provider:
+  name: aws
+  region: eu-west-1
+  role: arn:aws:iam::647740584617:role/ParamStoreAccessForLambdas
+  runtime: nodejs10.x
+
+plugins:
+  - serverless-webpack
+
+custom:
+  webpack: ./webpack.config.js
+  webpackIncludeModules:
+#    forceExclude:
+#      - aws-sdk
+
+functions:
+  RatedCommentBot:
+    handler: src/app.handler

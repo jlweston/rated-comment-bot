@@ -1,0 +1,9 @@
+.aws-sam/*
+.idea/*
+.nyc_output/*
+.serverless/*
+.vscode/*
+test/*
+.eslintrc.js
+template.yml
+wallaby.js
