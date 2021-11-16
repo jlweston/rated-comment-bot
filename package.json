@@ -6,7 +6,7 @@
   "author": "jlweston",
   "license": "MIT",
   "dependencies": {
-    "aws-sdk": "^2.304.0",
+    "aws-sdk": "^2.814.0",
     "axios": "^0.18.0",
     "bluebird": "^3.7.1",
     "btoa": "^1.2.1",
