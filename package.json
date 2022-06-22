@@ -10,7 +10,7 @@
     "axios": "^0.18.0",
     "bluebird": "^3.7.1",
     "btoa": "^1.2.1",
-    "got": "^9.6.0",
+    "got": "^11.8.5",
     "qs": "latest",
     "querystring": "^0.2.0",
     "safe-access": "^0.1.0",
